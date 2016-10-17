@@ -1,6 +1,11 @@
 
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Hero } from './hero';
+
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
+
+import { HeroService } from './hero.service';
 
 @Component({
   selector: 'my-hero-detail',
